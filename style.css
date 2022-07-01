@@ -781,6 +781,9 @@ h4 {
 .tc-white3 {
     color: #FFF;
 }
+.tc-white4 {
+    color: #ffeae1;
+}
 .btn-atomic-tangerine {
     background: #F3976C;
     color: #FFFFFF;
@@ -844,7 +847,7 @@ h4 {
     justify-content: space-between;
 }
 
-.footer, a {
+footer a {
     color: white;
 }
 
