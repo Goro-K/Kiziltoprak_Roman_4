@@ -10,7 +10,7 @@ body {
 a,
 button {
     transition: all .3s ease-in-out;
-    outline: none;
+    outline: none!important;
 }
 
 a:hover {
@@ -66,7 +66,10 @@ a:hover {
 .bg-tr-edge,
 .bg-br-edge,
 .bg-repeat {
-    background-size: auto;
+    -webkit-background-size: auto!important;
+    -moz-background-size: auto!important;
+    -o-background-size: auto!important;
+    background-size: auto!important;
 }
 
 .bg-repeat {
@@ -88,7 +91,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.webp");
+    background: url("img/texture-paper.png");
     background-size: 280px 280px;
 }
 
@@ -340,7 +343,7 @@ a:hover {
 }
 
 .navbar-toggle:hover {
-    background: transparent;
+    background: transparent!important;
 }
 
 .navbar-toggle .icon-bar {
@@ -401,7 +404,7 @@ a:hover {
 }
 
 .nav > li > .dropdown a {
-    background: none;
+    background: none!important;
     display: block;
     padding: 14px 15px;
 }
@@ -428,7 +431,7 @@ nav .caret {
     border-top-color: transparent;
     border-right-color: transparent;
     border-bottom-color: transparent;
-    margin: 6px -5px 0 0;
+    margin: 6px -5px 0 0!important;
     float: right;
 }
 
@@ -458,7 +461,7 @@ nav .caret {
 }
 
 button {
-    outline: none;
+    outline: none!important;
 }
 
 .btn-rd {
@@ -473,11 +476,11 @@ button {
 }
 
 .icon-md {
-    font-size: 30px !important;
+    font-size: 30px!important;
 }
 
 .icon-lg {
-    font-size: 60px;
+    font-size: 60px!important;
 }
 
 .sm-shadow {
@@ -536,7 +539,7 @@ a[data-lightbox] {
 a[data-lightbox]:hover::before {
     content: "+";
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
-    font-size: 35px;
+    font-size: 32px;
     width: 50px;
     height: 50px;
     margin-left: -25px;
@@ -648,7 +651,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757;
+    color: #575757!important;
 }
 
 .container {
@@ -674,7 +677,7 @@ a {
 }
 
 p {
-    font-size: 16px;
+    font-size: 11px;
 }
 
 .tight-width-whitespace {
@@ -689,7 +692,7 @@ p {
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF;
+    color: #FFFFFF!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
@@ -710,7 +713,7 @@ h3 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333333;
+    color: #333333!important;
 }
 
 .med-width-whitespace {
@@ -720,11 +723,11 @@ h3 {
 }
 
 h1 {
-    color: #333333;
+    color: #333333!important;
 }
 
 h4 {
-    color: #333333;
+    color: #333333!important;
 }
 
 .icons {
@@ -733,7 +736,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF;
+    color: #FFFFFF!important;
 }
 
 .portfolio-thumb {
@@ -756,7 +759,7 @@ h4 {
 
 .bold-link {
     font-weight: 900;
-    text-decoration: underline;
+    text-decoration: underline!important;
 }
 
 .bgc-white {
@@ -772,44 +775,38 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C;
+    color: #F3976C!important;
 }
 
-.tc-white3 {
-    color: #FFF;
-}
-.tc-white4 {
-    color: #ffeae1;
-}
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF;
+    color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956;
-    color: #FFFFFF;
+    background: #c27956!important;
+    color: #FFFFFF!important;
 }
 
 .ltc-white {
-    color: #FFFFFF;
+    color: #FFFFFF!important;
 }
 
 .ltc-white:hover {
-    color: #cccccc;
+    color: #cccccc!important;
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C;
+    color: #F3976C!important;
 }
 
 .ltc-atomic-tangerine:hover {
-    color: #c27956;
+    color: #c27956!important;
 }
 
 .icon-dark-slate-blue {
-    color: #364577;
-    border-color: #364577;
+    color: #364577!important;
+    border-color: #364577!important;
 }
 
 .bg-dots-bg {
@@ -821,37 +818,11 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.webp");
+    background-image: url("img/agence-la-panthere.jpg");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.webp");
-}
-
-.citation {
-    font-size: 21px;
-    letter-spacing: -0.4px;
-    word-spacing: -0.4px;
-}
-
-.ref_citation {
-    font-size: 18px;
-}
-
-.footer-flex {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
-}
-
-footer a {
-    color: white;
-}
-
-.col-sm-4 {
-    width: 100%;
-    text-align: center;
-    margin-top: 15px;
+    background-image: url("img/image-de-presentation.bmp");
 }
 
 @media (max-width: 1024px) {
@@ -877,13 +848,13 @@ footer a {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -901,11 +872,20 @@ footer a {
         overflow-x: hidden;
         position: relative;
     }
-
+    .bloc {
+        padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);
+    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
         width: 100%;
+    }
+    .bloc-fill-screen .fill-bloc-top-edge,
+    .bloc-fill-screen .fill-bloc-bottom-edge {
+        padding: 0 20px;
+        padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -922,8 +902,8 @@ footer a {
     h6,
     p,
     #disqus_thread {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 10px!important;
+        padding-right: 10px!important;
     }
     .b-parallax {
         background-attachment: scroll;
@@ -931,7 +911,7 @@ footer a {
     .navbar .nav {
         padding-top: 0;
         border-top: 1px solid rgba(0, 0, 0, .2);
-        float: none;
+        float: none!important;
     }
     .navbar.row {
         margin-left: 0;
@@ -956,7 +936,7 @@ footer a {
     }
     .dropdown .dropdown a .caret {
         float: none;
-        margin: 5px 0 0 10px;
+        margin: 5px 0 0 10px!important;
         border: 4px solid black;
         border-bottom-color: transparent;
         border-right-color: transparent;
@@ -1045,10 +1025,6 @@ footer a {
     .blocsapp-device-iphone5 img {
         width: 180px;
         height: 320px;
-    }
-    .img_w-h {
-        width: 570px;
-        height: 570px;
     }
 }
 
